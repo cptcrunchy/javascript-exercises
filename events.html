@@ -5,23 +5,20 @@
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>JS Functions Exercise</title>
+	<title>JS Events Exercise</title>
 </head>
 <body>
+<button id="btn">Click me!</button>
 
 <script>
+document.getElementById("btn").onclick= function () {
+	clickMeFunction()
+};
 
-	function addNumbers(){
-		const num1 = 10;
-		const num2 = 20;
+function clickMeFunction(){
+	console.log("hello");
+}
 
-		const calc = num1 + num2;
-		return calc;
-	}
-	const result = addNumbers();
-	const answer = result + 1000;
-
-	console.log(answer);
 
 </script>
 </body>

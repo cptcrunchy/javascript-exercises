@@ -8,9 +8,22 @@
 	<title>Arrays</title>
 </head>
 <body>
+<ul>
+
 <script>
+let cities = ['san antonio', 'austin', 'houston', 'dallas', 'laredo'];
 
+const userInput = prompt("What city are you from?");
 
+for(let i =0;i < cities.length; i++) {
+	if(userInput == cities[i]){
+		alert("Howdy, Fellow Texan!");
+		break;
+	}
+		alert("your city is " + userInput);
+		break;
+}
 </script>
+</ul>
 </body>
 </html>
